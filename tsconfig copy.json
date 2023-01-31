@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "plugins": [{ "transform": "typescript-rtti/dist/transformer" }],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  }
+}

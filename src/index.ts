@@ -1,8 +1,21 @@
-// Import stylesheets
-// import './style.css';
 
-// Write TypeScript code!
-// const appDiv: HTMLElement = document.getElementById('app');
-// appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+import "reflect-metadata";
 
-console.log("hello world")
+
+function Put( url: string ) {
+    return function Put( target: any, name: string ) {
+
+    }
+}
+
+
+class FooController {
+
+    @Put('/api/foo/:id')
+    update( body: any, params: { id: string } ) {
+
+    }
+    
+}
+
+console.log(Put)

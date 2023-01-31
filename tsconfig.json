@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
-    "target": "esnext"
-  }
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "plugins": [{ "transform": "./transformer.ts" }],
+  },
+  "files": ["src/index.ts"]
 }
